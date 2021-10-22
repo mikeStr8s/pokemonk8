@@ -1,0 +1,15 @@
+.list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list-text {
+    padding-left: 5px;
+}
+
+.pokeball {
+    height: 10px;
+    width: 10px;
+    padding-right: 5px
+}
