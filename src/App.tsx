@@ -1,7 +1,16 @@
-import PokeballListItemComponent from './components/pokeball-list-item'
+import K8ListItemComponent from './components/k8-list-item/k8-list-item'
 import './App.css'
+import K8ListComponent from './components/k8-list/k8-list'
 
 function App() {
+
+  const featureList = [
+    'Modern Pokemon statistics, learnsets, typings.',
+    'Addition of newer Pokemon evolutions.',
+    'Updated core systems like reusable TM\'s and the addition of the Physical/Special split.',
+    'And more...'
+  ]
+
   return (
     <div className="container">
       <div className="header"></div>
@@ -15,12 +24,7 @@ function App() {
           keeping the original story and feel but to reflect all of the core changes introduced in newer generations.
         </p>
         <p>The most notable changes being:</p>
-        <ul>
-          <PokeballListItemComponent text="Modern Pokemon statistics, learnsets, typings." />
-          <PokeballListItemComponent text="Addition of newer Pokemon evolutions." />
-          <PokeballListItemComponent text="Updated core systems like reusable TM's and the addition of the Physical/Special split." />
-          <PokeballListItemComponent text="And more..." />
-        </ul>
+        <K8ListComponent items={ featureList } />
       </div>
       <div className="footer"></div>
     </div>

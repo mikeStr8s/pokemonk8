@@ -1,16 +1,16 @@
 import React from 'react'
-import './pokeball-list-item.css'
-import pokeball from '../assets/pokeball_sprite.svg'
+import './k8-list-item.css'
+import pokeball from '../../assets/pokeball_sprite.svg'
 
-export interface IPokeballListItemProps {
+export interface IK8ListItemProps {
     text: string;
 }
 
-class PokeballListItemComponent extends React.Component<IPokeballListItemProps> {
+class K8ListItemComponent extends React.Component<IK8ListItemProps> {
 
     text: string;
 
-    constructor(props: IPokeballListItemProps) {
+    constructor(props: IK8ListItemProps) {
         super(props);
         this.text = props.text;
     }
@@ -25,4 +25,4 @@ class PokeballListItemComponent extends React.Component<IPokeballListItemProps> 
     }
 }
 
-export default PokeballListItemComponent
+export default K8ListItemComponent
