@@ -1,3 +1,18 @@
+:root {
+    --primary-color: #b5d44c;
+    --primary-color-light: #e9ff7d;
+    --primary-color-dark: #82a314;
+    --secondary-color: #3a7e7b;
+    --secondary-color-light: #6aaeaa;
+    --secondary-color-dark: #00514f;
+    --primary-alt-color: #e29039;
+    --primary-alt-color-light: #ffc168;
+    --primary-alt-color-dark: #ab6201;
+    --secondary-alt-color: #db3222;
+    --secondary-alt-color-light: #ff694d;
+    --secondary-alt-color-dark: #a10000;
+}
+
 .container {
     display: grid;
     grid-template-columns: 100%;
@@ -10,28 +25,33 @@
 
 .header {
     grid-area: header;
-    background-color: orange;
+    background-color: var(--primary-color-dark);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     height: 50px;
 }
 
 .leftside {
     grid-area: leftside;
-    background-color: red;
+    background-color: var(--primary-color);
 
     width: 0;
 }
 
 .rightside {
     grid-area: rightside;
-    background-color: red;
+    background-color: var(--primary-color);
 
     width: 0;
 }
 
 .main {
     grid-area: main;
-    background-color: blue;
+    background-color: var(--primary-color);
+    color: black;
 
     box-sizing: border-box;
     width: 100%;
@@ -41,9 +61,26 @@
 
 .footer {
     grid-area: footer;
-    background-color: green;
+    background-color: var(--primary-color);
 
     height: 50px;
+}
+
+.screenshot {
+    max-width: 100%;
+}
+
+.pokemon-logo {
+    max-height: 75%;
+}
+
+.pokemon-logo-text {
+    position: relative;
+    max-height: 25%;
+    top: -8px;
+
+    font-family:"helvetica-neue-condensed-black";
+    -webkit-text-stroke: 1px white;
 }
 
 @media (min-width: 576px) {
