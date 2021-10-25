@@ -3,7 +3,7 @@ import K8ListItemComponent from '../k8-list-item/k8-list-item';
 import './k8-list.css'
 
 export interface IK8ListProps {
-    items: string[];
+    items: { key: number, text: string }[];
 }
 
 class K8ListComponent extends React.Component<IK8ListProps> {
@@ -16,8 +16,8 @@ class K8ListComponent extends React.Component<IK8ListProps> {
 
     }
 
-    generateList(items: string[]): JSX.Element[] {
-        return items.map(item => <K8ListItemComponent text={item} />);
+    generateList(items: { key: number, text: string }[]): JSX.Element[] {
+        return items.map(item => <K8ListItemComponent key={ item.key } text={ item.text } />);
     }
 
     render() {

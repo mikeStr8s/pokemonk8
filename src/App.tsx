@@ -5,10 +5,10 @@ import K8ListComponent from './components/k8-list/k8-list'
 function App() {
 
   const featureList = [
-    'Modern Pokemon statistics, learnsets, typings.',
-    'Addition of newer Pokemon evolutions.',
-    'Updated core systems like reusable TM\'s and the addition of the Physical/Special split.',
-    'And more...'
+    { key: 0, text: 'Modern Pokemon statistics, learnsets, typings.' },
+    { key: 1, text: 'Addition of newer Pokemon evolutions.' },
+    { key: 2, text: 'Updated core systems like reusable TM\'s and the addition of the Physical/Special split.' },
+    { key: 3, text: 'And more...' }
   ]
 
   return (
