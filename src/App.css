@@ -33,7 +33,10 @@
     grid-area: main;
     background-color: blue;
 
+    box-sizing: border-box;
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footer {
