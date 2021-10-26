@@ -20,9 +20,9 @@ class K8ListItemComponent extends React.Component<IK8ListItemProps> {
 
     render() {
         return (
-            <div className="list-item" key={ this.key }>
-                <img src={ pokeball } className="pokeball" />
-                <span className="list-text">{ this.text }</span>
+            <div className="flex flex-row items-center" key={ this.key }>
+                <img src={ pokeball } className="h-4 w-4 pr-1" />
+                <span className="pl-1">{ this.text }</span>
             </div>
         )
     }
