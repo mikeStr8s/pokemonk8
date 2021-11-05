@@ -22,7 +22,7 @@ function App() {
       <div className="rightside"></div>
       <div className="main">
         <img className="screenshot" src={palet_town} />
-        <h1>What is Pokemon K8?</h1>
+        <h1 className="text-xl font-medium">What is Pokemon K8?</h1>
         <p>
           Pokemon K8 (ˈkeɪt) stands for: <strong>Kanto</strong> in the <strong>8th</strong> generation.
           It is a built-from-scratch Pokemon game using the Godot game engine.
